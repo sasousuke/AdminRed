@@ -1,0 +1,23 @@
+function FindProxyForURL(url, host) {
+
+    /**
+	    Todo lo que esta en tu red LAN va en modo DIRECT
+	    DIRECT es lo mismo que no usar proxy
+		
+    */ 
+    // Las peticiones hechas en la misma pc NO pasan a traves del proxy
+    if (shExpMatch(url, "*127.0.0.1*")) return "DIRECT";
+    if (shExpMatch(url, "*localhost*")) return "DIRECT";
+
+    // LAN en modo IP
+    if (shExpMatch(url, "*172.16.*")) return "DIRECT";
+    if (shExpMatch(url, "*192.168.*")) return "DIRECT";
+	
+    // LAN en modo DNS
+    if (shExpMatch(url, "*.hgdan.sld.cu*")) return "DIRECT";
+
+    /**
+	   Establecemos que todas las demás peticiones se harán usando proxy
+    */ 
+    return "PROXY 192.168.0.5:3128";
+};
