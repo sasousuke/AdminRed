@@ -1,0 +1,26 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+$ORIGIN 0.168.192.IN-ADDR.ARPA. ;
+@	IN	SOA	hgdan.sld.cu. root.hgdan.sld.cu. (
+			35
+			604800
+			86400
+			2419200
+			604800 )
+;
+@	IN	NS	dns.hgdan.sld.cu.
+
+2.0.168.192.in-addr.arpa.	IN	PTR	dns.hgdan.sld.cu.
+3.0.168.192.in-addr.arpa.	IN	PTR	ftp.hgdan.sld.cu.
+4.0.168.192.in-addr.arpa.	IN	PTR	ldap.hgdan.sld.cu.
+13.0.168.192.in-addr.arpa.	IN	PTR	galen.hgdan.sld.cu.
+11.0.168.192.in-addr.arpa.	IN	PTR	guardiamedica.hgdan.sld.cu.
+18.0.168.192.in-addr.arpa.	IN	PTR	ubuntu1604.hgdan.sld.cu.
+15.0.168.192.in-addr.arpa.	IN	PTR	ubuntu1804.hgdan.sld.cu.
+8.0.168.192.in-addr.arpa.	IN	PTR	www.hgdan.sld.cu.
+7.0.168.192.in-addr.arpa.	IN	PTR	directorio.hgdan.sld.cu.
+5.0.168.192.in-addr.arpa.	IN	PTR	proxy.hgdan.sld.cu.
+21.0.168.192.in-addr.arpa.	IN	PTR	wsus.hgdan.sld.cu.
+9.0.168.192.in-addr.arpa.	IN	PTR	debian9.hgdan.sld.cu.

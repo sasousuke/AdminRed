@@ -1,0 +1,31 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "hgdan.sld.cu" {
+      type master;
+      file "/etc/bind/db.hgdan.sld.cu";
+      notify no;
+};
+
+zone "0.168.192.in-addr.arpa" {
+      type master;
+      file "/etc/bind/db.0.168.192.in-addr.arpa";
+};
+zone "sld.cu" {
+	type forward;
+	forwarders {
+		201.220.222.131;
+		201.220.222.132;
+		};
+	};
+zone "gtm.sld.cu" {
+	type forward;
+	forwarders {
+		201.220.201.226;
+		};
+	};
