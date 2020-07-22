@@ -1,0 +1,83 @@
+10.127.40.0/24
+
+190.6.94.59    ### IP de ernesto
+190.6.94.62    ### IP de ernesto
+190.6.94.60    ### IP de ernesto
+190.6.94.58    ### IP de ernesto
+201.220.196.238  ##IP ciecm
+190.6.71.74     ## IP de luis motores
+10.14.2.66
+10.19.3.10      ## IP Jose la plaquita
+
+201.220.196.188
+
+
+201.220.196.190   ## Servidor Jabber
+201.220.196.188   ## FTP del nodo HLG de Correo web 
+201.220.196.185   ## FTP del nodo HLG de Correo web
+201.220.196.189   ## Sito WWW del nodo HLG
+201.220.196.182   ## UCM
+201.220.196.130   ## UCM
+201.220.196.146   ## IP del Hospital Lenny
+
+201.220.196.238
+
+201.220.196.161   ## Server Time Nodo Hlg
+201.220.196.166   ## IP de wikidocker en HLG
+201.220.196.10
+142.132.9.0/24
+10.19.1.186       ## IP de antilla dms
+10.19.1.166       ## IP mia
+10.19.1.154       ## IP de la Filia de Moa - Garlobo
+201.220.196.89    ## IP de la DMS holguin
+201.220.196.90    ## IP de la DMS holguin
+201.220.196.2     ## IP mayari
+#10.19.1.166      ## IP mia
+
+10.10.11.214      ## IP de la pagina www.di.sld.cu
+
+
+10.19.1.134       ## Para probar quien es que esta en mi ftp
+
+
+201.220.196.42    ## Ip de angeles
+10.10.3.6         ## Alex mayaveque
+10.10.3.7
+10.10.3.8
+
+201.220.193.70    ## FTP de Bbito
+10.19.1.170       ## IP de Yosvani Filial de Mayari
+201.220.196.14    ## IP cinico
+10.19.0.123
+
+10.10.12.6
+
+
+10.16.10.70     ### IP deleter
+201.220.196.38  ## IP de Orlando
+
+
+10.24.4.18        ### Ip de berto
+10.19.3.26        ## IP de Yosbani Sabon -- Policlinico -- MOA
+
+201.220.222.150   ##
+
+201.220.205.241   ## IP del colega del nodo de granma 
+10.19.2.38        ## IP de emilio Urbanos Noris
+
+
+201.220.196.13    ## del Clinico Holguin
+
+
+
+10.60.7.19        ## Datacenter HOLGUIN
+
+10.26.3.78        ## IP Yansy Mayabeque
+10.26.3.74        ## IP Yansy Mayabeque
+
+10.10.51.51       ## IP Infomed que escenea los puertos
+
+10.19.1.53        ## ADSL anexo
+10.19.1.55        ## ADSL anexo
+
+10.60.7.4         ## WWW Pinar del Rio
