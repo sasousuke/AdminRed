@@ -36,11 +36,11 @@ lftp -c mirror -e -n ${TEMPURLUPDATE} ${TEMPDIRUPDATE}
 # Posicionandonos en la ruta donde esta la actualizacion
 cd ${TEMPDIRUPDATE}
 
-# Creando el rar
-rar a updateESET.rar *
+# Creando el zip
+zip -r updateSAV.zip *
 
-# Moviendo el rar a la ruta de actualizaciones
-mv updateESET.rar ${ESETDIRUPDATE}
+# Moviendo el zip  a la ruta de actualizaciones
+mv updateESET.zip  ${ESETDIRUPDATE}
 
 # Ponerle todos los permisos de lectura
 chmod -R 744 ${ESETDIRUPDATE}

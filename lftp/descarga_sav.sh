@@ -24,8 +24,8 @@ lftp -c mirror -e -n ${TEMPURLUPDATE} ${SAVDIRUPDATE}
 # Posicionandonos en la ruta donde esta la actualizacion
 cd ${SAVDIRUPDATE}
 
-# Creando el rar
-rar a updateSAV.rar *
+# Creando el zip
+zip -r updateSAV.zip *
 
 # Ponerle todos los permisos de lectura
 chmod -R 744 ${SAVDIRUPDATE}
