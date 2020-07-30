@@ -13,7 +13,7 @@ if [ ! -d ${ESETDIRUPDATE} ]; then
 	mkdir -p ${ESETDIRUPDATE}
 fi
 
-# Borrar la actualizacion anterior
+# Borrar la actualización anterior
 rm ${ESETDIRUPDATE}/*
 
 # Temporal para SFX
@@ -33,20 +33,20 @@ lftp -c mirror -e -n ${TEMPURLUPDATE} ${TEMPDIRUPDATE}
 # Creando el SFX con p7zip y el modulo SFX
 7z a -mhe=on -sfx7z.sfx ${ESETDIRUPDATE}/updateESET.exe ${TEMPDIRUPDATE}/*
 
-# Posicionandonos en la ruta donde esta la actualizacion
+# Posicionandonos en la ruta donde esta la actualización
 cd ${TEMPDIRUPDATE}
 
 # Creando el zip
-zip -r updateSAV.zip *
+zip -r updateESET.zip *
 
-# Moviendo el zip  a la ruta de actualizaciones
-mv updateESET.zip  ${ESETDIRUPDATE}
+# Moviendo el zip a la ruta de actualizaciones
+mv updateESET.zip ${ESETDIRUPDATE}
 
 # Ponerle todos los permisos de lectura
 chmod -R 744 ${ESETDIRUPDATE}
 
 # Estableciendo el propietario del usuario que publica en el servidor webftp local
-chown -R www-data:www-data ${ESETDIRUPDATE}
+chown -R www-data:www-data ${SAVDIRUPDATE}
 
 # Regla de oro. Si un script finaliza de forma satisfactoria emite un mensaje de OK == 0
 exit 0
