@@ -9,13 +9,13 @@
 SAVDIRUPDATEBASE=/var/www/ftp/antivirus/actualizaciones/segurmatica
 SAVDIRUPDATE=/var/www/ftp/antivirus/actualizaciones/segurmatica/segav
 
+# Borrar la actualización anterior
+rm -rf ${SAVDIRUPDATEBASE}
+
 # Comprobar que existe el directorio. Si no existe, crearlo.
 if [ ! -d ${SAVDIRUPDATE} ]; then
 	mkdir -p ${SAVDIRUPDATE}
 fi
-
-# Borrar la actualizacion anterior
-rm -rf ${SAVDIRUPDATE}/*
 
 # Temporal para SFX
 TEMPDIRUPDATE=/root/extras/segav
@@ -44,7 +44,7 @@ cd ${TEMPDIRUPDATE}
 zip -r updateSAV.zip *
 
 # Moviendo el zip a la ruta de actualizaciones
-mv updateSAV.zip ${SAVDIRUPDATE}
+mv updateSAV.zip ${SAVDIRUPDATEBASE}
 
 # Ponerle todos los permisos de lectura
 chmod -R 744 ${SAVDIRUPDATEBASE}

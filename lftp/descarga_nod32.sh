@@ -8,13 +8,13 @@
 # Carpetas donde se almacenaran las actualizaciones
 ESETDIRUPDATE=/var/www/ftp/antivirus/actualizaciones/eset
 
+# Borrar la actualización anterior
+rm -rf ${ESETDIRUPDATE}
+
 # Comprobar que existe el directorio. Si no existe, crearlo.
 if [ ! -d ${ESETDIRUPDATE} ]; then
 	mkdir -p ${ESETDIRUPDATE}
 fi
-
-# Borrar la actualización anterior
-rm ${ESETDIRUPDATE}/*
 
 # Temporal para SFX
 TEMPDIRUPDATE=/root/extras/nod32
