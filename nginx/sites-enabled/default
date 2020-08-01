@@ -1,0 +1,21 @@
+# Configuración para utilizar a NGINX como proxy caché para el tema de WSUS en una LAN con respecto a un WSUS externo
+# Datos del WSUS externo
+# http://wsus.gtm.sld.cu:8530
+# Datos del WSUS LAN
+# http://wsus.hgdan.sld.cu
+
+proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=STATIC:400m inactive=240h max_size=100g;
+
+server {
+    listen 80;
+
+        location / {
+            proxy_pass             http://wsus.gtm.sld.cu:8530;
+            proxy_set_header       Host $host;
+            proxy_buffering        on;
+            proxy_cache            STATIC;
+            proxy_cache_valid      200  10d;
+            proxy_cache_use_stale  error timeout invalid_header updating
+                                   http_500 http_502 http_503 http_504;
+        }
+}
