@@ -47,10 +47,10 @@ zip -r updateSAV.zip *
 mv updateSAV.zip ${SAVDIRUPDATEBASE}
 
 # Ponerle todos los permisos de lectura
-chmod -R 744 ${SAVDIRUPDATEBASE}
+chmod -R 777 ${SAVDIRUPDATEBASE}
 
 # Estableciendo el propietario del usuario que publica en el servidor webftp local
-chown -R www-data:www-data ${SAVDIRUPDATE}
+chown -R www-data ${SAVDIRUPDATEBASE}
 
 # Regla de oro. Si un script finaliza de forma satisfactoria emite un mensaje de OK == 0
 exit 0
