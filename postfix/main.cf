@@ -1,0 +1,33 @@
+# See /usr/share/postfix/main.cf.dist for a commented, more complete version
+
+smtpd_banner = $myhostname ESMTP $mail_name (Debian/GNU)
+biff = no
+
+# appending .domain is the MUA's job.
+append_dot_mydomain = no
+
+# Uncomment the next line to generate "delayed mail" warnings
+#delay_warning_time = 4h
+
+alias_maps = hash:/etc/aliases
+alias_database = hash:/etc/aliases
+mydestination = $myhostname, localhost.$mydomain, localhost
+# relayhost = 
+mynetworks = 127.0.0.0/8
+inet_interfaces = loopback-only
+recipient_delimiter = +
+
+# Configuracion especifica de smtp para infomed
+relayhost = smtp.sld.cu:25
+smtp_use_tls = no
+smtp_sasl_auth_enable = yes
+smtp_sasl_password_maps = hash:/etc/postfix/notifica_email
+smtp_sasl_security_options =
+compatibility_level = 2
+
+# Descomentar el contenido de abajo si es necesario que todos los correos
+# salgan con el mismo correo en el from
+# Cambiar el campo from para que siempre envie a nombre de un usuario
+# sender_canonical_classes = envelope_sender, header_sender
+# sender_canonical_maps =  regexp:/etc/postfix/sender_canonical_maps
+# smtp_header_checks = regexp:/etc/postfix/header_check
