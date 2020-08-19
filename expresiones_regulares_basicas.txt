@@ -1,0 +1,21 @@
+Expresiones Regulares básicas
+^  significa el inicio de la línea
+$  significa el final de la línea
+.  significa cualquier carácter, menos un salto de línea
+\  significa un escape (o sea el siguiente carácter o expresión se interpreta literal, útil para coincidir con caracteres especiales como: punto, asterisco, acento circunflejo, guión, paréntesis, corchetes, llaves, etc.)
+\\  significa backslash literal
+\s  significa cualquier carácter de espacio
+\S  significa cualquier carácter diferente a un espacio
+\t  significa tabulación
+\n  significa salto de línea
+[0-9]  significa cualquier carácter numérico
+[a-z]  significa cualquier carácter alfabético, en minúsculas
+[A-Z]  significa cualquier carácter alfabético, en mayúsculas
+[a-zA-Z]  significa cualquier carácter alfabético
+[0-9a-zA-Z]  significa cualquier carácter alfanumérico
+[^a-c]  significa cualquier carácter que no esté entre la a y la c minúsculas
+(A|B)  significa A o B
+*  significa el carácter o la expresión anterior, cero o mas veces
++  significa el carácter o la expresión anterior, una o mas veces
+?  significa el carácter o la expresión anterior, opcional
+{m,n}  significa un mínimo de m veces y un maximo de n (puede omitirse cualquiera de las dos para no establecer el límite inferior o superior)
