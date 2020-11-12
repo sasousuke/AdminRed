@@ -52,7 +52,17 @@ function widget($args,$instance){
         <div id="ultima_modificacion" class="sidebar-wrap clearfix ultima-modificacion-multisitio">
 			<div class="widget_title"><h3>ACTUALIZACIÓN</h3></div>
 			<div class="textwidget">
-				<p><strong>Actualizado: </strong><?php echo $my_fecha; ?></p>
+			    <p>
+                               <strong>Actualizado: </strong><?php echo $my_fecha; ?>
+                            </p>
+                            <p>
+                               <a href="http://www.sld.cu" target="_blank">
+                                   <img class="alignnone alignright" style="border-width: 0px;" title="Salud" src="http://www.hgdan.sld.cu/wp-content/uploads/2019/03/minsap-242x220.png" alt="Salud" width="80" height="70">
+                               </a>
+                               <a href="<?php echo home_url(); ?>"><span class="dashicons dashicons-welcome-learn-more"></span> Ir al inicio</a><br>
+                               <a href="https://webmail.sld.cu/" target="_blank"><span class="dashicons dashicons-email-alt"></span> Correo Infomed</a><br>
+                               <a href="http://www.sld.cu/red-de-portales" target="_blank"><span class="dashicons dashicons-book-alt"></span> Red de portales</a>
+                            </p>
 			</div>
         </div>
         <?php
