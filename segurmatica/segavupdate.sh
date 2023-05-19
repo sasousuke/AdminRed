@@ -27,3 +27,6 @@ export LC_ALL=C
 # replicator -i segav -d c:\prueba\ -s http://www.segurmatica.cu/descargas/actualizaciones/segav/ -f proxy.cu -p 3128 -u nombre_usuario -c contrasenna_usuario
 
 replicator -i segav -d /opt/webftp/Segurmatica/Update/ -f 192.168.10.1 -p 3128
+
+# Regla de oro. Si un script finaliza de forma satisfactoria emite un mensaje de OK == 0
+exit 0
