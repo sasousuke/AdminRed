@@ -17,6 +17,9 @@ fi
 #Poner la ruta completa para evitar errores de no encontrado la ruta del ejecuatble
 /usr/sbin/replicator -i segav -d ${SAVDIRUPDATEBASE} -f 192.168.10.1 -p 3128
 
+#Estableciendo permisos para que cualquier usuario del sistema pueda leer el contenido de la carpeta
+chmod -R 755 ${SAVDIRUPDATEBASE}
+
 # Posicionandonos en la ruta donde esta la actualizacion
 cd ${SAVDIRUPDATEBASE}
 
