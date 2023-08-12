@@ -18,3 +18,4 @@ services:
       - /root/configs/jellyfin:/config
       - /opt/jellyfin/media:/data
     restart: unless-stopped
+    
