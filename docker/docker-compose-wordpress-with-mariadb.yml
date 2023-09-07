@@ -1,0 +1,45 @@
+version: '3.1'
+
+services:
+
+  wordpressdb:
+    image: docker.io/bitnami/mariadb:10.6
+    container_name: wordpressdb
+    volumes:
+      - /opt/mariadb_data:/bitnami/mariadb
+    environment:
+      - MARIADB_USER=wordpress
+      - MARIADB_PASSWORD=Roov2uekaigieweejoFa  #usar pwgen para generarlas
+      - MARIADB_DATABASE=wordpress
+      - MARIADB_ROOT_PASSWORD=ohQu8laeMoonguudaegh
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Caracas
+
+  wordpress:
+    image: docker.io/bitnami/wordpress-nginx:6
+    container_name: wordpress
+    ports:
+      - '80:8080'
+      - '443:8443'
+    volumes:
+      - /opt/wordpress_data:/bitnami/wordpress
+    depends_on:
+      - wordpressdb
+    links:
+      - wordpressdb
+    environment:
+      - WORDPRESS_DATABASE_HOST=wordpressdb
+      - WORDPRESS_DATABASE_PORT_NUMBER=3306
+      - WORDPRESS_DATABASE_USER=wordpress
+      - WORDPRESS_DATABASE_PASSWORD=Roov2uekaigieweejoFa
+      - WORDPRESS_DATABASE_NAME=wordpress
+      - WORDPRESS_USERNAME=admin
+      - WORDPRESS_PASSWORD=roo3ahpo8aesh1euv2Ah
+      - WORDPRESS_EMAIL=contact@mydomain.com
+      - WORDPRESS_FIRST_NAME=Sasousuke
+      - WORDPRESS_LAST_NAME=Blog Digital
+      - WORDPRESS_BLOG_NAME=Blog Digital de Sasousuke
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Caracas
