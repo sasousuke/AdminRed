@@ -25,7 +25,7 @@ services:
       - db
     volumes:
       - nextcloud:/var/www/html
-      - /opt/nextclouddata:/var/www/html
+      - /opt/nextclouddata:/var/www/html/data
     environment:
       - MYSQL_PASSWORD=1qazxsw2
       - MYSQL_DATABASE=nextcloud
