@@ -1,0 +1,8 @@
+## To block DNS over TLS (DoT), block port 853
+## This list has been created for security purpose ONLY
+## To be more efficient, you should also consider blocking DoH providers IP adresses
+## Last update : 7 April 2024
+===================================================================
+
+# NextFlix
+0.0.0.0 www.netflix.com
