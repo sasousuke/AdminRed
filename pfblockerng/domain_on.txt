@@ -6,3 +6,27 @@
 
 # NextFlix
 0.0.0.0 www.netflix.com
+
+
+0.0.0.0 ipv4-c096-gru001-ix.1.oca.nflxvideo.net
+0.0.0.0 ipv4-c068-gru001-ix.1.oca.nflxvideo.net
+0.0.0.0 ipv4-c065-gru001-ix.1.oca.nflxvideo.net
+0.0.0.0 ipv4-c074-gru001-ix.1.oca.nflxvideo.net
+0.0.0.0 ipv4-c100-gru001-ix.1.oca.nflxvideo.net
+0.0.0.0 ipv4-c069-gru001-ix.1.oca.nflxvideo.net
+0.0.0.0 ipv4-c061-gru001-ix.1.oca.nflxvideo.net
+
+0.0.0.0 ipv4-c053-gru001-ix.1.oca.nflxvideo.net
+0.0.0.0 ipv4-c071-gru001-ix.1.oca.nflxvideo.net
+0.0.0.0 ipv4-c075-gru001-ix.1.oca.nflxvideo.net
+0.0.0.0 ipv4-c098-gru001-ix.1.oca.nflxvideo.net
+0.0.0.0 ipv4-c090-gru001-ix.1.oca.nflxvideo.net
+
+0.0.0.0 ipv4-c093-gru001-ix.1.oca.nflxvideo.net
+0.0.0.0 ipv4-c083-gru001-ix.1.oca.nflxvideo.net
+0.0.0.0 ipv4-c099-gru001-ix.1.oca.nflxvideo.net
+0.0.0.0 ipv4-c056-gru001-ix.1.oca.nflxvideo.net
+0.0.0.0 ipv4-c078-gru001-ix.1.oca.nflxvideo.net
+0.0.0.0 ipv4-c054-gru001-ix.1.oca.nflxvideo.net
+0.0.0.0 ipv4-c066-gru001-ix.1.oca.nflxvideo.net
+0.0.0.0 ipv4-c085-gru001-ix.1.oca.nflxvideo.net
