@@ -1,0 +1,15 @@
+services:
+  mstream:
+    image: linuxserver/mstream:5.13.1
+    container_name: mstream
+    hostname: mstream
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Havana
+    volumes:
+      - /opt/mstream/config:/config
+      - /opt/mstream/music:/music
+    ports:
+      - 3000:3000
+    restart: always
