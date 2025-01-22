@@ -1,4 +1,0 @@
-172.16.0.201 # PC Tomografo #1
-172.16.0.205 # PC Reporte Rayos X #1
-172.16.0.206 # PC Reporte Rayos X #2
-172.16.2.18 # PC Febriles
