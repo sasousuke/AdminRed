@@ -1,0 +1,12 @@
+services:
+  dokuwiki:
+    image: dokuwiki/dokuwiki:2024-02-06b
+    container_name: dokuwiki
+    hostname: dokuwiki
+    restart: always
+    ports:
+      - "8080:8080"
+    env_file:
+      - dokuwiki.env
+    volumes:
+      - /opt/dokuwiki:/storage
