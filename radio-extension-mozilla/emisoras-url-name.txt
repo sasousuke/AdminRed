@@ -1,0 +1,10 @@
+https://addons.mozilla.org/es-ES/firefox/addon/radio_player_/
+
+name: Radio Progreso
+url: https://icecast.teveo.cu/XjfW7qWN
+
+name: CMKS Guantánamo
+url: https://icecast.teveo.cu/Csb3zdfv
+
+name: Radio Taino
+url: https://icecast.teveo.cu/3MCwWg3V
