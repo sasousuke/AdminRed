@@ -1,0 +1,116 @@
+{
+  "mode": "disable",
+  "sync": false,
+  "autoBackup": true,
+  "passthrough": "",
+  "theme": "",
+  "container": {},
+  "commands": {
+    "setProxy": "",
+    "setTabProxy": "",
+    "includeHost": "",
+    "excludeHost": ""
+  },
+  "data": [
+    {
+      "active": true,
+      "title": "MIMISMO",
+      "type": "http",
+      "hostname": "192.168.41.250",
+      "port": "3128",
+      "username": "",
+      "password": "",
+      "cc": "",
+      "city": "",
+      "color": "#20b2aa",
+      "pac": "",
+      "pacString": "",
+      "proxyDNS": true,
+      "include": [
+        {
+          "type": "wildcard",
+          "title": "*.onat.gob.cu",
+          "pattern": "*.onat.gob.cu",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "192.168.*.*",
+          "pattern": "^(http|ws)s?://192\\.168(\\.\\d+){2}/",
+          "active": true
+        }
+      ],
+      "exclude": [
+        {
+          "type": "wildcard",
+          "title": "10.10.*.*",
+          "pattern": "10.*",
+          "active": true
+        }
+      ],
+      "tabProxy": []
+    },
+    {
+      "active": true,
+      "title": "LOCAL",
+      "type": "http",
+      "hostname": "192.168.41.6",
+      "port": "3128",
+      "username": "",
+      "password": "",
+      "cc": "",
+      "city": "",
+      "color": "#daa520",
+      "pac": "",
+      "pacString": "",
+      "proxyDNS": true,
+      "include": [
+        {
+          "type": "wildcard",
+          "title": "*.onat.gob.cu",
+          "pattern": "*.onat.gob.cu",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "192.168.*.*",
+          "pattern": "^(http|ws)s?://192\\.168(\\.\\d+){2}/",
+          "active": true
+        }
+      ],
+      "exclude": [],
+      "tabProxy": []
+    },
+    {
+      "active": true,
+      "title": "PAC",
+      "type": "pac",
+      "hostname": "192.168.14.16",
+      "port": "",
+      "username": "",
+      "password": "",
+      "cc": "",
+      "city": "",
+      "color": "#7b68ee",
+      "pac": "http://192.168.14.16/wpad.txt",
+      "pacString": "",
+      "proxyDNS": true,
+      "include": [
+        {
+          "type": "wildcard",
+          "title": "*.onat.gob.cu",
+          "pattern": "*.onat.gob.cu",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "192.168.*.*",
+          "pattern": "^(http|ws)s?://192\\.168(\\.\\d+){2}/",
+          "active": true
+        }
+      ],
+      "exclude": [],
+      "tabProxy": []
+    }
+  ]
+}
