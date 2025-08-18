@@ -1,11 +1,11 @@
 #!/bin/sh
-# Descargar recursos URL desde fuera de la red de salud usando WGET y proxyweb de INFOMED
+# Descargar recursos URL usando WGET y proxy web
 # Los recursos URL deben estar en el archivo declarado un recurso por linea
 # Si se desea descargar 10 recursos el archivo debe tener 10 lineas
 
 # Estableciendo proxy para HTTP y HTTPS
-export http_proxy="http://proxy.sld.cu:3128"
-export https_proxy="http://proxy.sld.cu:3128"
+export http_proxy="http://PROXYIP:PORT"
+export https_proxy="http://PROXYIP:PORT"
 
 # Estableciendo directorio a descargar
 DOWNLOADFOLDER=/root/extras/descargas/
