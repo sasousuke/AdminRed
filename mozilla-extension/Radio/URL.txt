@@ -1,8 +1,0 @@
-name: Radio Progreso
-url: https://icecast.teveo.cu/XjfW7qWN
-
-name: CMKS GuantÃ¡namo
-url: https://icecast.teveo.cu/Csb3zdfv
-
-name: Radio Taino
-url: https://icecast.teveo.cu/3MCwWg3V
